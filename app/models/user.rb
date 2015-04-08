@@ -10,13 +10,13 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6 }
 
   # Returns the hashed digest of given string
-  def User.digest(string)
+  def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
    
   # Returns random token
-  def User.new_token
+  def self.new_token
     SecureRandom.urlsafe_base64
   end
 
