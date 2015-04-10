@@ -12,6 +12,7 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 
+  #Cannot find admin? 
   # Log in as test user
   def log_in_as(user, options = {})
     password    = options[:password] || 'password'
