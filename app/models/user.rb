@@ -42,7 +42,13 @@ class User < ActiveRecord::Base
   end
   
 
-  
+  # Defines a proto-feed.
+  # See following users for the full implementation.
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+
+
   # Activates an account
   def activate
     update_attribute(:activated, true)
