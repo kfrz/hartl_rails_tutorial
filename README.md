@@ -1,5 +1,5 @@
 
-# RoR Tutorial: Sample application
+#    RoR Tutorial: Sample application
 [![Coverage Status](https://coveralls.io/repos/kfrz/sample_app/badge.svg)](https://coveralls.io/r/kfrz/sample_app)
 [![Build Status](https://travis-ci.org/kfrz/sample_app.svg?branch=master)](https://travis-ci.org/kfrz/sample_app)
 
