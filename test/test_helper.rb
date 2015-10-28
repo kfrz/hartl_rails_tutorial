@@ -4,7 +4,7 @@ Coveralls.wear!
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
-require "minitest/reporters"
+require 'minitest/reporters'
 Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
@@ -15,7 +15,7 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 
-  #Cannot find admin? 
+  # Cannot find admin?
   # Log in as test user
   def log_in_as(user, options = {})
     password    = options[:password] || 'password'
