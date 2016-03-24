@@ -1,14 +1,14 @@
 require 'test_helper'
 
 class FollowingTest < ActionDispatch::IntegrationTest
-  
+
   def setup
    @user = users(:michael)
    @other = users(:archer)
-   log_in_as(@user) 
+   log_in_as(@user)
   end
 
-  test 'following page' do
+  test 'followers page error' do
     get following_user_path(@user)
     assert_not @user.following.empty?
     assert_match @user.following.count.to_s, response.body
