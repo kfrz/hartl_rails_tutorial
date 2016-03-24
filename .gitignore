@@ -19,3 +19,7 @@
 
 # Ignore spring
 /spring/*.pid
+
+# Ignore zeus files
+custom_plan.rb
+zeus.json

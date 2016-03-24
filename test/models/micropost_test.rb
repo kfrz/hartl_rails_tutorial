@@ -5,6 +5,9 @@ class MicropostTest < ActiveSupport::TestCase
     @user = users(:michael)
     @micropost = @user.microposts.build(content: "Lorem ipsum")
   end
+  
+  test "should be trimmed" do
+  end
 
   test "should be valid" do
     assert @micropost.valid?
